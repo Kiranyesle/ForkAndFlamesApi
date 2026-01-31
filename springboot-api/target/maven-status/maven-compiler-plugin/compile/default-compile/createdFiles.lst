@@ -3,9 +3,15 @@ com\forksandflames\api\model\Snack.class
 com\forksandflames\api\model\UserDTO.class
 com\forksandflames\api\repository\UserRepository.class
 com\forksandflames\api\controller\CompanyController.class
+com\forksandflames\api\model\Purchase.class
 com\forksandflames\api\model\Company.class
+com\forksandflames\api\config\WebConfig$1.class
 com\forksandflames\api\controller\SnackController.class
+com\forksandflames\api\config\WebConfig.class
+com\forksandflames\api\repository\PurchaseRepository.class
 com\forksandflames\api\model\User.class
+com\forksandflames\api\controller\PurchaseController.class
+com\forksandflames\api\dto\PurchaseReportDTO.class
 com\forksandflames\api\SpringbootApiApplication.class
 com\forksandflames\api\controller\UserController.class
 com\forksandflames\api\repository\CompanyRepository.class

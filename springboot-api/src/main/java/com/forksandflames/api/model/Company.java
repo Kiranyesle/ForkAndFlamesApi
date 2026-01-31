@@ -1,6 +1,7 @@
 package com.forksandflames.api.model;
 
 import jakarta.persistence.*;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import java.util.List;
 
 @Entity
@@ -15,8 +16,10 @@ public class Company {
     @Column(columnDefinition = "LONGTEXT")
     private String logo;
     @OneToMany(mappedBy = "company", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
     private List<Snack> snacks;
     @OneToMany(mappedBy = "company", cascade = CascadeType.ALL, orphanRemoval = true)
+    @JsonManagedReference
     private List<User> users;
     // Getters and setters
     public Long getId() { return id; }

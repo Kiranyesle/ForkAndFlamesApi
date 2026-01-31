@@ -10,6 +10,15 @@
 				"$javac"
 			],
 			"group": "build"
+		},
+		{
+			"label": "Run Spring Boot Application",
+			"type": "shell",
+			"command": "mvn spring-boot:run",
+			"problemMatcher": [
+				"$javac"
+			],
+			"group": "build"
 		}
 	]
 }

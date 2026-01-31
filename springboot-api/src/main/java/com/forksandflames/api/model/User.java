@@ -1,4 +1,6 @@
+
 package com.forksandflames.api.model;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.*;
 
@@ -13,6 +15,7 @@ public class User {
     private String role; // 'admin' or 'user'
     @ManyToOne
     @JoinColumn(name = "company_id")
+    @JsonBackReference
     private Company company;
     // Getters and setters
     public Long getId() { return id; }
