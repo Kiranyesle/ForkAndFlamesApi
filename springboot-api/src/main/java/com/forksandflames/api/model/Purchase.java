@@ -13,7 +13,9 @@ public class Purchase {
     private Long snackId;
     private Long companyId;
     private int quantity;
+    @Column(columnDefinition = "double")
     private double totalPrice;
+    @Column(columnDefinition = "datetime")
     private LocalDateTime purchaseTime;
 
     // Getters and setters
