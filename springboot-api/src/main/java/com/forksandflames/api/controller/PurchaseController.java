@@ -22,6 +22,7 @@ import java.time.LocalDate;
 
 @RestController
 @RequestMapping("/api/purchase")
+@CrossOrigin(origins = "*")
 public class PurchaseController {
     @Autowired
     private PurchaseRepository purchaseRepository;
